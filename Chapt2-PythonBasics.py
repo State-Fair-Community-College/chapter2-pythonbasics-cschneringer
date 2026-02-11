@@ -1,6 +1,6 @@
 # --------------------------------------------
-# Name:
-# Date:
+# Name: Caleb Schneringer
+# Date: 2/11/2026
 # Program: Chapter 2 Practice
 # Description:
 # Complete each section by following the
@@ -15,8 +15,8 @@
 # 2. Store your name as a string in the variable
 # 3. Use print() to display: Hello, <name>
 
-
-print()  # blank line for readability
+name = "Caleb"
+print("hello " + name)  # blank line for readability
 
 
 # ------------------------------------------------
@@ -27,8 +27,8 @@ print()  # blank line for readability
 # 2. Store the input in a variable
 # 3. Print a sentence that includes the color
 
-
-print()
+fav_color = input("What is your favorite color?: ")
+print("your favorite color is " + fav_color)
 
 
 # ------------------------------------------------
@@ -42,8 +42,11 @@ print()
 # 5. Add the two numbers together
 # 6. Print the total
 
+number = int(input("what number do you choose?: "))
+number_2 = int(input("what number do you choose?: "))
 
-print()
+combined_number = number + number_2
+print("your number is: " + str(combined_number))
 
 
 # ------------------------------------------------
@@ -57,8 +60,12 @@ print()
 # 5. Calculate the final price
 # 6. Print the final price
 
+price = float(input("What price is your item?: "))
+tax_rate = 0.08
+tax_amount = price*tax_rate
+final_price = tax_amount + price
 
-print()
+print("your final price is:" + str(final_price))
 
 
 # ------------------------------------------------
@@ -71,3 +78,9 @@ print()
 # 4. Calculate weekly pay
 # 5. Use an f-string to display the result
 #    (Round to 2 decimal places)
+
+hours = float(input("how many hours did you work?: "))
+hourly_pay = float(input("what is your hourly pay?: "))
+weekly_pay = hours*hourly_pay
+
+print(f"you got ${weekly_pay} this week. ")
